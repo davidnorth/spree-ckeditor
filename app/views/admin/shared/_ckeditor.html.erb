@@ -1,0 +1,13 @@
+<%= javascript_include_tag '/ckeditor/ckeditor.js' %>
+<script type="text/javascript">
+window.onload = function()
+{
+  $('textarea').each(function(){
+    CKEDITOR.replace(this.id, 
+      {
+        height: 350,
+      });    
+  })
+}
+
+</script>
