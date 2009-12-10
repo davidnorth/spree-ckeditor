@@ -5,9 +5,9 @@ window.onload = function()
   $('textarea').each(function(){
     CKEDITOR.replace(this.id, 
       {
+        customConfig: '<%= javascript_path('/ckeditor/custom_config.js') %>',
         height: 350,
       });    
   })
 }
-
 </script>
