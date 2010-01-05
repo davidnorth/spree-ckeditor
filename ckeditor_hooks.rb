@@ -1,5 +1,5 @@
-class CkeditorHooks < Spree::ThemeSupport::Hook::ViewListener
+class CkeditorHooks < Spree::ThemeSupport::HookListener
 
-  render_on :admin_head, 'admin/shared/ckeditor'
+  insert_after :admin_inside_head, :partial => 'admin/shared/ckeditor'
 
 end
